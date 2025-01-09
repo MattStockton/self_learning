@@ -1,0 +1,37 @@
+body {
+    background-color: #FAFAFA;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  h1, h2, h3 {
+    color: #444;
+    margin-bottom: 0.6rem;
+  }
+  p, label, span {
+    color: #555;
+    line-height: 1.5;
+  }
+  .block-container {
+    max-width: 1200px;
+    margin: 1rem auto;
+    background-color: transparent;
+    text-align: left;
+  }
+  [data-testid="column"] > div:nth-child(1) {
+    position: sticky;
+    top: 0;
+  }
+  .selected-item-button {
+    background-color: #cceeff;
+    border: 2px solid red;
+    color: #003366;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+  }
