@@ -181,7 +181,7 @@ with c6:
                     add_item(sub, style, length, knowledge_level, c_text)
                     prog_bar.progress(int((i / total) * 100))
 
-                st.experimental_rerun()
+                st.experimental_set_query_params()
 
 st.markdown('</div>', unsafe_allow_html=True)  # End top-panel
 
@@ -201,7 +201,7 @@ else:
         else:
             if st.button(display_name, key=f"select_{list_id}"):
                 st.session_state.selected_item_id = list_id
-                st.experimental_rerun()
+                st.experimental_set_query_params()
 st.markdown('</div>', unsafe_allow_html=True)  # End second-panel
 
 # ------------- THIRD PANEL (Selected Content) -------------
